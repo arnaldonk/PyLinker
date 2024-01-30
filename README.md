@@ -7,5 +7,6 @@ Using this tool, cybersecurity experts can bypass firewall restrictions and perf
 
 # Usage
 `git clone https://github.com/arnaldonk/PyLinker.git`
-Content of the .php file:
+*Upload the .php file*
+`python3 main.py`
 
