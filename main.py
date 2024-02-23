@@ -5,7 +5,7 @@ import sys
 import time
 import requests
 from random import randrange
-from code_class import CommandExecutor
+from command_in import CommandExecutor
 from termcolor import colored
 from urllib.parse import urlparse
 
@@ -23,8 +23,8 @@ print("\n" + banner + "\n")
 
 def handle_signal(sig, frame):
     print(colored("\n\n[*] Closing", "red"))
-    code_class.run_command(remove_input_cmd)
-    code_class.run_command(remove_output_cmd)
+    command_in.run_command(remove_input_cmd)
+    command_in.run_command(remove_output_cmd)
     sys.exit(1)
 
 # Global variables
@@ -57,11 +57,11 @@ except requests.RequestException:
     print(colored(f"\n[-] Error connecting to the URL", "red"))
     exit(1)
 
-code_class = CommandExecutor(weburl=weburl, output_file=output_file)
-code_class.setup_shell()
+command_in = CommandExecutor(weburl=weburl, output_file=output_file)
+command_in.setup_shell()
 signal.signal(signal.SIGINT, handle_signal)
 
 while True:
     user_input = input(colored("SHELL > ", "yellow"))
-    code_class.write_command(user_input + "\n")
+    command_in.write_command(user_input + "\n")
     time.sleep(1)
