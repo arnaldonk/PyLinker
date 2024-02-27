@@ -1,7 +1,7 @@
 ![PyLinker](https://github.com/arnaldonk/PyLinker/blob/master/images/PyLinker.png)
 
 
-# PyLinker
+# PyLinker 
 
 This tool represents a simulation of an interactive command line interface, designed to meet the needs of Cybersecurity Professionals. Its usefulness becomes evident in scenarios in which you face restrictions to establish more direct connections with the server, such as the presence of a Firewall that blocks the exit of TCP/UDP connections.
 
