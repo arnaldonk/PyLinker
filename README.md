@@ -1,4 +1,4 @@
-![PyLinker](https://github.com/arnaldonk/PyLinker/blob/main/PyLinker.png)
+![PyLinker](https://github.com/arnaldonk/PyLinker/blob/master/images/PyLinker.png)
 
 
 # PyLinker
@@ -10,9 +10,11 @@ The main purpose of this tool is to provide a practical solution when security l
 Using this tool, cybersecurity experts can bypass firewall restrictions and perform essential tasks, maintaining a level of interactivity that makes it easy to execute commands and obtain critical information. This translates into greater flexibility and effectiveness in addressing situations where conventional connectivity is limited by security measures.
 
 # Usage
-`git clone https://github.com/arnaldonk/PyLinker.git`
+```git clone https://github.com/arnaldonk/PyLinker.git```
 
-*Upload the .php file*
+```cd PyLinker/program```
 
-`python3 main.py`
+*Upload the .php file (PyLinker/php/cmd.php)*
+
+```python3 main.py```
 
